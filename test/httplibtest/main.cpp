@@ -5,7 +5,7 @@
 void test(httplib::Request& req,httplib::Response &res)
 {
     (void)req;
-    printf("begin\n");
+   
     res.set_header("Content-type","application/json");
     res.set_header("Set-Cookie","JSESSIONID=123123");
 }
@@ -23,6 +23,6 @@ int main()
          res.set_header("Content-type","application/json");
          res.set_header("Set-Cookie","JSESSIONID=123123");
     });
-    ser.listen("0,0,0,0",16666);
+    ser.listen("39.97.186.155",16666);
     return 0;
 }
